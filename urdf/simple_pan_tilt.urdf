@@ -8,7 +8,7 @@
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="yellow">
-        <color rgba="1 1 0 1"/>
+        <color rgba="1 1 0 0.5"/>
       </material>
     </visual>
 
@@ -16,7 +16,7 @@
       <geometry>
 	<cylinder length="0.03" radius="0.2"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="1 0 0" xyz="0 0 0"/>
     </collision>
     <inertial>
 	<mass value="1"/>
