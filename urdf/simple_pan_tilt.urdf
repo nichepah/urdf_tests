@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot name="simple_pan_tilt">
-
-  <link name="base_link">
+	
+   <link name="base_link">
     <visual>
       <geometry>
 	<cylinder length="0.01" radius="0.2"/>
