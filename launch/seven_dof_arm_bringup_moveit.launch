@@ -1,0 +1,19 @@
+<launch>
+
+<!-- Launch Gazebo -->
+<include file="$(find urdf_tests)/launch/seven_dof_sim.launch" />
+
+<!-- ros_control seven dof arm launch file -->
+<include file="$(find urdf_tests)/launch/seven_dof_arm_gazebo_states.launch"/>
+
+<!-- ros_control position control dof arm launch file -->
+<!--<include file="$(find seven_dof_arm_gazebo)/launch/seven_dof_
+arm_gazebo_position.launch" /> -->
+<!-- ros_control trajectory control dof arm launch file -->
+<include file="$(find seven_dof_arm_gazebo)/launch/seven_dof_arm_
+trajectory_controller.launch" />
+
+<!-- moveit launch file -->
+<include file="$(find seven_dof_arm_config)/launch/moveit_planning_
+execution.launch" />
+</launch>
